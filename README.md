@@ -1,3 +1,7 @@
+lütfen rapor dosyasını inceleyin
+
+[Mehmet_Kulubecioglu_QuizMaster_Report_2025.pdf](https://github.com/user-attachments/files/20274812/Mehmet_Kulubecioglu_QuizMaster_Report_2025.pdf)
+
 QuizMaster
  
 QuizMaster, kullanıcıların bilgi ve becerilerini test edebileceği eğlenceli ve interaktif bir quiz uygulamasıdır. Çeşitli kategorilerde sorular ve kullanıcı dostu bir arayüz ile öğrenmeyi keyifli hale getirir.
