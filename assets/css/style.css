@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap");
+
+:root {
+  --primary-color: rgb(244, 116, 88);
+  --secondary-color: rgb(209, 209, 209);
+  --text-color: rgb(0, 0, 0);
+}
+body {
+  width: 100%;
+  height: auto;
+  font-family: "Poppins";
+  position: relative;
+}
+main {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  padding: 40px 0;
+  padding-top: 80px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.sideArea {
+  width: 100%;
+  height: auto;
+}
+.sideArea img {
+  width: 100%;
+}
+.nextPrev {
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+}
+.nextPrev button {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  width: 238px;
+  height: 65px;
+  background-color: var(--primary-color);
+  border-radius: 33px;
+  border: 0;
+  text-transform: uppercase;
+}
+.nextPrev button i {
+  transition: 0.5s;
+}
+.nextPrev button.prev i {
+  margin-right: 10px;
+}
+.nextPrev button.next i {
+  margin-left: 10px;
+}
+.nextPrev button.prev:hover i {
+  transform: translateX(-10px);
+}
+.nextPrev button.next:hover i {
+  transform: translateX(10px);
+}
+.steps {
+  padding: 0 50px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.question {
+  width: 60%;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  display: grid;
+  place-content: center;
+  margin-bottom: 80px;
+}
+.question h1 {
+  font-size: 40px;
+  font-family: "Anton";
+  color: rgb(0, 10, 56);
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.question img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px 40px;
+  width: 100%;
+}
+.option {
+  display: flex;
+  align-items: center;
+  width: 47%;
+  height: 96px;
+  gap: 8px;
+}
+.option span {
+  display: grid;
+  place-content: center;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  background-color: var(--secondary-color);
+  width: 73px;
+  height: 100%;
+  width: 20%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  text-transform: uppercase;
+  transition: cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s;
+}
+.optionInner {
+  width: 80%;
+  height: 100%;
+  position: relative;
+  padding-left: 27px;
+  display: grid;
+  align-content: center;
+}
+.optionInner input {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--secondary-color);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.optionInner label {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  position: relative;
+  pointer-events: none;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.optionInner input:checked {
+  background-color: var(--primary-color);
+}
+.optionInner input:checked ~ label {
+  color: rgb(255, 255, 255);
+}
+.option.checked span {
+  background-color: var(--primary-color);
+}
+.stepBar {
+  border-radius: 12px;
+  width: 100%;
+  background-color: var(--secondary-color);
+  height: 34px;
+  padding: 6px;
+  margin-top: 60px;
+}
+.stepBar .fill {
+  width: 100%;
+  border-radius: inherit;
+  height: 100%;
+  background-color: var(--primary-color);
+  transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+#error {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}

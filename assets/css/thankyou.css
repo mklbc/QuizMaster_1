@@ -1,0 +1,231 @@
+.loadingresult
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(226, 226, 226, 0.8);
+    z-index: 100000;
+    transition: 0.5s;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    display: none;
+}
+
+.thankyou-page
+{
+    background-image: url(../images/thankyou-bg.jpg) !important;
+    background-size: cover;
+    clip-path: circle(0.0% at 50% 50%);
+    pointer-events: none;
+    visibility: hidden;
+    transition: 1s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -9999999999;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.thankyou_show
+{
+    pointer-events: all;
+    clip-path: circle(70.7% at 50% 50%);
+    visibility: visible;
+    z-index: 999999999;
+
+}
+.thankyou-page .logo
+{
+    justify-content: center;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.thankyou-page .logo-icon
+{
+    width: 55px;
+    margin-right: 10px;
+}
+.thankyou-page .logo .logo-icon img
+{
+    width: 100%;
+}
+.thankyou-page .logo-text
+{
+    font-size: 65px;
+    font-weight: bold;
+}
+.thankyou-page article
+{
+    text-align: center;
+    margin-top: 80px;
+}
+.thankyou-page article h1
+{
+        font-size: 75px;
+        font-weight: bold;
+        text-transform: uppercase; 
+}
+.thankyou-page article h1 span
+{
+    display: block;
+    font-size: 80px;
+    font-weight: 900;
+    color: var(--primary-color);
+}
+.thankyou-page article span
+{
+    font-size: 20px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+.thankyou-page article p
+{
+    font-size: 18px;
+    font-family: "Myriad Pro";
+    color: rgb(9,9,9);
+    margin: 0 auto;
+    margin-top: 45px;
+    width: 39%;
+}
+.social-media
+{
+    text-align: center;
+    margin: 40px auto;
+    width: 30%;
+    padding: 6px 10px;
+}
+.social-media a
+{
+    border: solid 1px rgb(244, 244, 244);
+    border-radius: 5px;
+    background-color: transparent;
+    color: rgb(9,9,9);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+.social-media a i
+{
+    margin-right: 10px;
+    font-size: 20px;
+}
+.back-home
+{
+    width: 188px;
+    height: 63px;
+    margin: 0 auto;
+}
+.back-home a
+{
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    color: rgb(255,255,255);
+    width: 100%;
+    display: block;
+    line-height: 63px;
+    text-align: center;
+    text-decoration: none;
+    height: 100%;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: 0;
+
+}
+
+
+
+/* responsive */
+
+
+/* large screens */
+@media (min-width: 1600px)
+{
+
+}
+
+
+@media (max-width: 1500px)
+{
+
+}
+
+
+/* Desktops/Laptops */
+@media (max-width: 1200px)
+{
+
+}
+
+/* Laptops */
+@media (max-width: 1024px)
+{
+    .thankyou-page article p
+    {
+        width: 80%;
+    }
+    .social-media
+    {
+        width: 65%;
+    }
+    .thankyou-page article h1
+    {
+        font-size: 60px;
+    }
+    .thankyou-page article h1 span
+    {
+        font-size: 65px;
+    }
+    .thankyou-page article span
+    {
+        font-size: 18px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px)
+{
+    .social-media
+    {
+        width: 85%;
+    }
+}
+
+/* mobile */
+@media (max-width: 480px)
+{
+    .thankyou-page article h1
+    {
+        font-size: 30px;
+    }
+    .thankyou-page article h1 span
+    {
+        font-size: 35px;
+    }
+    .thankyou-page article span
+    {
+        font-size: 15px;
+    }
+    .thankyou-page article p
+    {
+        font-size: 15px;
+        width: 90%;
+    }
+    .thankyou-page .logo-text
+    {
+        font-size: 60px;
+    }
+    .social-media
+    {
+        width: 100%;
+    }
+}

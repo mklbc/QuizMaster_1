@@ -1,0 +1,129 @@
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1800px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .question {
+    height: 300px;
+  }
+  .question h1 {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+  .option {
+    width: 45%;
+  }
+  .optionInner label {
+    font-size: 18px;
+  }
+  .option span {
+    font-size: 24px;
+  }
+  .optionInner {
+    padding-left: 10px;
+  }
+  .option {
+    height: 70px;
+  }
+}
+@media (max-width: 1200px) {
+  .question {
+    width: 100%;
+  }
+  .question h1 {
+    width: 78%;
+    margin-top: 30px;
+  }
+  .nextPrev {
+    width: 100%;
+  }
+  .nextPrev button {
+    width: 200px;
+    font-size: 15px;
+  }
+  .question img {
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .steps {
+    padding: 0 20px;
+  }
+  .question h1 {
+    width: 70%;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .tab-100 {
+    width: 100%;
+  }
+  .tab-none {
+    display: none;
+  }
+  .nextPrev {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    z-index: 1000000000;
+  }
+  .question img {
+    width: 50%;
+  }
+  .question h1 {
+    width: 60%;
+  }
+  .options {
+    margin-bottom: 120px;
+  }
+  .stepBar {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .question img {
+    width: 72%;
+  }
+  .optionInner label {
+    font-size: 15px;
+  }
+  .option {
+    height: 55px;
+  }
+}
+@media (max-width: 576px) {
+}
+
+@media (max-width: 480px) {
+  .steps {
+    padding: 0;
+  }
+  main {
+    padding: 20px 0;
+  }
+  .option {
+    width: 100%;
+  }
+  .question {
+    height: 200px;
+    margin-bottom: 50px;
+  }
+  .question img {
+    width: 80%;
+  }
+  .question h1 {
+    font-size: 20px;
+  }
+  .nextPrev button {
+    width: 48%;
+    font-size: 12px;
+    height: 50px;
+  }
+}
